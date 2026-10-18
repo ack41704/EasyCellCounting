@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "EasyCellCounting: fast, reproducible counting of fluorescent cells in microscopy images"
+type: software
+authors:
+  - family-names: Khambete
+    given-names: Amav
+version: 1.0.0
+date-released: "2026-10-18"
+license: MIT
+repository-code: "https://github.com/ack41704/EasyCellCounting"
+keywords:
+  - cell counting
+  - fluorescence microscopy
+  - image analysis
+  - tdTomato
+  - neuroscience
+abstract: >-
+  Semi-automated counting of bright fluorescent cells on the left and right side
+  of a region of interest. Regions are drawn interactively on screen-sized previews
+  and counted in batch at full resolution by thresholding, contour segmentation,
+  area-based single-cell / cluster classification and a cluster-to-cell estimate
+  from the single-cell area distribution of the same region.

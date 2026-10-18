@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easycellcounting"
+version = "1.0.0"
+description = "Semi-automated counting of fluorescent cells left and right of a midline in microscopy images"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Amav Khambete" }]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "opencv-python>=4.5",
+    "openpyxl>=3.0",
+]
+keywords = ["cell counting", "fluorescence microscopy", "image analysis", "neuroscience", "tdTomato"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+figures = ["matplotlib>=3.5"]
+
+[project.scripts]
+easycellcount = "easycellcounting.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ack41704/EasyCellCounting"
+Issues = "https://github.com/ack41704/EasyCellCounting/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
