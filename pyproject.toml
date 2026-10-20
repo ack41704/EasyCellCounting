@@ -36,6 +36,7 @@ easycellcount = "easycellcounting.cli:main"
 [project.urls]
 Homepage = "https://github.com/ack41704/EasyCellCounting"
 Issues = "https://github.com/ack41704/EasyCellCounting/issues"
+Paper = "https://doi.org/10.64898/2025.12.08.692997"
 
 [tool.setuptools.packages.find]
 where = ["src"]
